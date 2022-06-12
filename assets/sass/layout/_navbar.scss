@@ -1,0 +1,31 @@
+.navbar{
+	@extend %flex-between;
+	background-color: antiquewhite;
+	height: $navbar-height;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1.875rem;
+	&__logo{
+		margin-left: $margin-base;
+		padding: $padding-large;
+		background-color: rebeccapurple;
+	}
+	&__link{
+		flex:1;
+		display: inline-flex;
+		justify-content: flex-end;
+		a{
+			margin-left: $margin-large;
+		}
+	}
+	&__outside-link{
+		display: inline-flex;
+		a{
+			margin-left: $margin-base;
+		}
+		img{
+			height:$margin-large;
+			width: $margin-large;
+		}
+	}
+}

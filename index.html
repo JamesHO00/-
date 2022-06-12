@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">Logo</a>
+      <ul class="navbar__link">
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">最新消息</a></li>
+        <li><a href="#">展演活動</a></li>
+        <li><a href="#">遊玩資訊</a></li>
+        <li><a href="#">參觀資訊</a></li>
+      </ul>
+      <ul class="navbar__outside-link">
+        <li>
+          <a href="#"
+            ><img src="assets/icon/facebook.png" alt="facebook-icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="assets/icon/instagram.png" alt="instagram-icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <header
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ul class="carousel-inner">
+        <li class="carousel-item active">
+          <img
+            src="assets/image/cover.jpg"
+            class="d-block"
+            alt="旗津風車公園夕陽照"
+          />
+        </li>
+        <li class="carousel-item">
+          <img
+            src="assets/image/cover.jpg"
+            class="d-block"
+            alt="旗津風車公園夕陽照"
+          />
+        </li>
+        <li class="carousel-item">
+          <img
+            src="assets/image/cover.jpg"
+            class="d-block"
+            alt="旗津風車公園夕陽照"
+          />
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <article class="news">
+        <h2 class="news__title">最新消息</h2>
+        <i class="news__icon"
+          ><img src="assets/icon/1sea-snail.png" alt="貝殼"
+        /></i>
+        <ul class="news__content">
+          <li>
+            <sub class="news__date">2022.5.13</sub>
+            <p>旗津圖書館海洋保育攝影展 國際攝影師前來相挺</p>
+          </li>
+          <li>
+            <sub class="news__date">2022.5.4</sub>
+            <p>旗津超精采！活動接力一路嗨到8月</p>
+          </li>
+          <li>
+            <sub class="news__date">2022.5.4</sub>
+            <p>夏日旗津玩不膩 6月啤酒音樂嘉年華清涼登場</p>
+          </li>
+          <li>
+            <sub class="news__date">2022.5.2</sub>
+            <p>熱門拍照約會景點！ 高雄也有旗津版藍眼淚</p>
+          </li>
+        </ul>
+        <!-- <i><img src="/assets/figure/blackbear.png" alt="黑熊" /></i> -->
+      </article>
+      <article class="event">
+        <h2 class="event__title">展演活動</h2>
+        <div class="event__container">
+          <button>
+            <span class="material-symbols-outlined"> arrow_back_ios </span>
+          </button>
+          <section class="event__item">
+            <div></div>
+            <!-- <img src="/assets/picture/event1.png" alt="" /> -->
+            <aside class="event__info">
+              <h3 class="event__name">旗津黑沙玩藝節</h3>
+              <a href="#">more </a>
+            </aside>
+          </section>
+          <section class="event__item">
+            <div></div>
+            <!-- <img src="/assets/picture/event2.jpg" alt="" /> -->
+            <aside class="event__info">
+              <h3 class="event__name">循環綠活節</h3>
+              <a href="#">more</a>
+            </aside>
+          </section>
+          <section class="event__item">
+            <div></div>
+            <!-- <img src="/assets/picture/event3.jpg" alt="" /> -->
+            <aside class="event__info">
+              <h3 class="event__name">旗津醉蝦趴</h3>
+              <a href="#">more</a>
+            </aside>
+          </section>
+          <button>
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </button>
+        </div>
+      </article>
+      <article class="map">
+        <img class="map__deer" src="/assets/figure/deer.png" alt="鹿" />
+        <div class="map__location"></div>
+        <!-- <img src="/assets/picture/map.png" alt="旗津位置" /> -->
+      </article>
+    </main>
+    <footer class="footer">
+      <section class="footer__logo">
+        <div></div>
+        <h3>旗津 Chiji</h3>
+      </section>
+      <section class="footer__info">
+        <h3 class="footer__info__contact-e">Contact Us</h3>
+        <h2 class="footer__info__contact-c">聯絡我們</h2>
+        <p class="footer__info__address">振興里 高雄市旗津區</p>
+        <p class="footer__info__email">a390000@kcg.gov.tw</p>
+        <p class="footer__info__phone">07-7995678</p>
+      </section>
+      <section class="footer__visits">
+        <h3 class="footer__visits-e">Visits</h3>
+        <h2 class="footer__visits-c">造訪人次</h2>
+        <p class="footer__visits__update">更新時間 2022.5.21</p>
+      </section>
+      <p class="footer__copyright">©高雄旗津 All rights reserved.</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

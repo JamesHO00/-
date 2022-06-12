@@ -1,0 +1,58 @@
+.footer{
+	background-color: blanchedalmond;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	&__logo{
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: aqua;
+		}
+		h3{
+			margin-top: 2rem;
+			font-size: 2.5rem;
+			text-align: center;
+		}
+	}
+	&__info{
+&__contact-e{
+	font-size: 1.25rem;
+}
+&__contact-c{
+	font-size: 2.25rem;
+	margin-top: $margin-small;
+}
+&__address{
+	font-size: 1.5rem;
+	margin: $margin-base 0;
+}
+&__email{
+	font-size: 1.5rem;
+}
+&__phone{
+	font-size: 1.5rem;
+	margin-top: $margin-small;
+}
+	}
+	&__visits{
+		&-e{
+			font-size: 1.25rem;
+		}
+		&-c{
+			margin: $margin-small 0;
+			font-size: 1.5rem;
+		}
+		p{
+			font-size: 1.5rem;
+		}
+	}
+	&__copyright{
+		font-size: 1.5rem;
+		position: absolute;
+		bottom:0;
+	}
+}
