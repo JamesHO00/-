@@ -2,7 +2,7 @@
 background-color: yellowgreen;
 position: relative;
 &__title{
-	font-size:$title;
+	font-size:$font-title;
 	padding: $padding-base 0;
 }
 &__container{
@@ -24,10 +24,10 @@ position: relative;
 &__info{
 @extend %flex-between;
 	h3{
-		font-size: 1.5rem;
+		font-size: $font-navbar;
 	}
 	a{
-		font-size: 1.25rem;
+		font-size:$font-date;
 	}
 }
 button{

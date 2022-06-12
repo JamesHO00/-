@@ -2,12 +2,12 @@
 	@extend %flex-between;
 	background-color: antiquewhite;
 	height: $navbar-height;
-	width: 80%;
+	width: 84.167%;
 	margin: 0 auto;
-	font-size: 1.875rem;
+	font-size:$font-navbar;
 	&__logo{
-		margin-left: $margin-base;
-		padding: $padding-large;
+	width: $logo;
+	height: $logo;
 		background-color: rebeccapurple;
 	}
 	&__link{
@@ -24,8 +24,8 @@
 			margin-left: $margin-base;
 		}
 		img{
-			height:$margin-large;
-			width: $margin-large;
+			height: $icon-base;
+			width: $icon-base;
 		}
 	}
 }

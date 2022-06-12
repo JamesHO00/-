@@ -3,8 +3,10 @@
 // variable
 @import 'variable/color';
 @import 'variable/layout';
+@import 'variable/font-size';
 // mixin
 @import 'mixin/flex-box';
+@import 'mixin/background';
 
 // layout
 @import 'layout/body';
@@ -14,9 +16,11 @@
 @import 'layout/footer';
 
 // component
+@import 'component/home';
 @import 'component/news';
 @import 'component/event';
 @import 'component/map';
 @import 'component/history';
 @import 'component/stay';
 @import 'component/hotel';
+@import 'component/about'
