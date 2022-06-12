@@ -16,11 +16,11 @@
 @import 'layout/footer';
 
 // component
-@import 'component/home';
-@import 'component/news';
-@import 'component/event';
-@import 'component/map';
-@import 'component/history';
-@import 'component/stay';
-@import 'component/hotel';
-@import 'component/about'
+@import 'component/home/home';
+@import 'component/home/event';
+@import 'component/home/map';
+@import 'component/home/news';
+@import 'component/history/about';
+@import 'component/history/about';
+@import 'component/stay/stay';
+@import 'component/stay/hotel';

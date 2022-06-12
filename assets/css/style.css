@@ -229,47 +229,6 @@ a {
   background-image: url(../image/cover.jpg);
 }
 
-.news {
-  position: relative;
-}
-
-.news__title {
-  font-size: 1.5rem;
-  padding: 20px 0;
-}
-
-.news__icon {
-  position: absolute;
-  top: 0;
-  left: -55px;
-}
-
-.news__icon img {
-  width: 130px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.news__content {
-  padding-bottom: 20px;
-}
-
-.news__content li {
-  border-bottom: 1px solid #000000;
-  margin: 20px 0;
-  padding-bottom: 20px;
-}
-
-.news__content li p {
-  font-size: 1.125rem;
-}
-
-.news__date {
-  display: block;
-  font-size: 0.875rem;
-  margin: 10px 0;
-}
-
 .event {
   background-color: yellowgreen;
   position: relative;
@@ -328,9 +287,99 @@ a {
   border-radius: 40px;
 }
 
-.history__items {
-  line-height: 1.4;
-  margin-bottom: 20px;
+.news {
+  position: relative;
+}
+
+.news__title {
+  font-size: 1.5rem;
+  padding: 20px 0;
+}
+
+.news__icon {
+  position: absolute;
+  top: 0;
+  left: -55px;
+}
+
+.news__icon img {
+  width: 130px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.news__content {
+  padding-bottom: 20px;
+}
+
+.news__content li {
+  border-bottom: 1px solid #000000;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+.news__content li p {
+  font-size: 1.125rem;
+}
+
+.news__date {
+  display: block;
+  font-size: 0.875rem;
+  margin: 10px 0;
+}
+
+.about-us {
+  background-image: url(../picture/history.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us__container {
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  background-color: beige;
+  width: 30.21%;
+  height: 152px;
+  border-radius: 40px;
+}
+
+.about-us__title {
+  text-align: end;
+  padding: 40px 20px;
+  font-size: 1.5rem;
+}
+
+.about-us {
+  background-image: url(../picture/history.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us__container {
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  background-color: beige;
+  width: 30.21%;
+  height: 152px;
+  border-radius: 40px;
+}
+
+.about-us__title {
+  text-align: end;
+  padding: 40px 20px;
+  font-size: 1.5rem;
 }
 
 .stay__header {
@@ -409,32 +458,5 @@ a {
   display: block;
   text-align: end;
   margin: 40px 10%;
-}
-
-.about-us {
-  background-image: url(../picture/history.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.about-us__container {
-  position: absolute;
-  bottom: -10%;
-  left: -5%;
-  background-color: beige;
-  width: 30.21%;
-  height: 152px;
-  border-radius: 40px;
-}
-
-.about-us__title {
-  text-align: end;
-  padding: 40px 20px;
-  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
