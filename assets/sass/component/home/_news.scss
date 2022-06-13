@@ -1,7 +1,7 @@
 .news{
 	position: relative;
-	margin-left: 15%;
-	width: 50%;
+	margin-left: 9.025%;
+	width: 65.975%;
 	&__title{
 		font-size:$font-title;
 		padding: $padding-base 0;
@@ -9,9 +9,9 @@
 	}
 	&__icon{
 		position: absolute;
-		width: 27.27%;
+		width: 9.025%;
 		top:0;
-		left: -27.27%;
+		left: -9.025%;
 		img{
 			width: 100%;
 			transform: rotate(90deg);
@@ -19,9 +19,9 @@
 	}
 	&__figure{
 		position: absolute;
-		width: 65.45%;
+		width: 25%;
 		bottom: 0;
-		right: -65.45%;
+		right: -25%;
 		img{
 			width: 100%;
 			transform: scaleX(-1);

@@ -2,9 +2,10 @@
 	@extend %flex-around;
 	background-color: $color-accent;
 	width: 100%;
-	height: 300px;
+	height: $footer-height;
 	position: relative;
 	color:$color-white;
+
 	&__logo{
 		h3{
 			margin-top: $margin-base;
@@ -12,25 +13,40 @@
 			text-align: center;
 		}
 	}
+
 	&__info{
-		img{
-			width:$icon-small ;
-			height: $icon-small;
-			margin-right: $margin-small;
-		}
 		&__contact-e{
-	font-size: $font-navbar;
+			font-size: $font-navbar;
 		}
+
 		&__contact-c{
-	font-size: $font-title-footer-sub;
-	margin-top: $margin-small;
+			font-size: $font-title-footer-sub;
+			margin-top: $margin-small;
 		}
 		&__address{
 			font-size: $font-navbar;
-		margin: $margin-base 0;
+			margin: $margin-base 0;
+		}
+		&__email{
+			&::before{
+				display:inline-block;
+				content:'';
+				margin-right: $margin-small;
+				background-image: url(../public/icon/email.png);
+				width:$icon-small;
+				height: $icon-small;
+			}
 		}
 &__phone{
 	margin-top: $margin-small;
+		&::before{
+			display:inline-block;
+			content:'';
+			margin-right: $margin-small;
+			background-image: url(../public/icon/phone.png);
+			width: $icon-small;
+			height:$icon-small;
+			}
 		}
 	}
 	&__visits{
@@ -42,7 +58,7 @@
 			font-size: $font-title-footer-sub;
 		}
 		&__update{
-			margin-bottom:$icon-base ;
+			margin-bottom:$margin-big ;
 		}
 		img{
 			margin-right:$margin-base ;

@@ -1,57 +1,67 @@
 .event{
 position: relative;
+
 &__icon{
 	position: absolute;
-	width: 13.36%;
+	width: 5.946%;
 	img{
 		width: 100%;
 	}
 }
+
 &__title{
-	width: 86.36%;
-	margin-left: 13.36%;
+	width: 94.05%;
+	margin-left: 5.946%;
 	font-size:$font-title;
 	padding: $padding-base 0;
 	color:$color-accent;
 }
+
 &__container{
 	@extend %flex-between;
 }
+
 &__item{
 	width: 26%;
 	img{
 		width: 100%;
 	}
 }
+
 &__info{
 	@extend %flex-between;
 	margin:$margin-large 0;
+
 	h3{
 		font-size: $font-navbar;
-
 	}
+
 	a{
 		text-align: end;
 		color:$color-gray;
 		font-size:$font-date;
 	}
 }
+
 button{
 	@extend %flex-center;
 	width: $padding-large;
 	height: $padding-large;
 	border: none;
-	border-radius: 50%;
+	border-radius: $border-radius-circle;
 	position: absolute;
 	background-color: $color-button-gray;
 	color:$color-white;
+	cursor: pointer;
 }
+
 &__button-1{
 	top:21vh;
-	left:-4.545%;
+	left:-5.946%;
 }
+
 &__button-2{
 	top:21vh;
-	right: -4.545%;
+	right: -5.946%;
 }
 }

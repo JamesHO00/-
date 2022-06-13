@@ -4,13 +4,16 @@
 	width: 84.167%;
 	margin: 0 auto;
 	font-size:$font-navbar;
+
 	&__logo{
 	width: $logo;
 	height: $logo;
-	img{
+
+		img{
 		width: 100%;
+		}
 	}
-	}
+
 	&__link{
 		flex:1;
 		display: inline-flex;
@@ -20,6 +23,7 @@
 			color:$color-accent-dark;
 		}
 	}
+
 	&__outside-link{
 		display: inline-flex;
 		a{

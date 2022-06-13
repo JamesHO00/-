@@ -5,4 +5,7 @@
 	@extend %background-img-position;
 	@extend %flex-center;
 	color:$color-white;
+	&__title{
+		font-size: $font-big-title;
+	}
 }

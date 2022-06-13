@@ -8,7 +8,7 @@
 &__location{
 width: 62.72%;
 border: 1px solid $color-accent;
-border-radius: 40px;
+border-radius: $border-radius-base;
 margin-left:$margin-small;
 img{
 	width: 100%;
