@@ -1,5 +1,6 @@
 .hotel{
 	position: relative;
+	color:$color-accent-dark;
 &__image{
 	width: 100%;
 	border-radius: 20px;
@@ -15,23 +16,33 @@
 
 	margin-top:$margin-large;
 	margin-bottom:$margin-large;
-	p{
+	li{
 		display: inline-block;
-		margin: 0 $margin-base;
+		margin-right: 20%;
+		img{
+			width: 50px;
+			height: 50px;
+		}
 	}
 }
 &__feature{
 	@extend %flex-around;
 	margin-top: $margin-base;
 	margin: 0 auto;
-	background-color: blanchedalmond;
+	background-color: $color-accent-light;
 	width: 80%;
 	height: 250px;
 	border-radius: 50px;
+	color:$color-white;
 &__items{
 	position: relative;
 	font-size: $font-navbar;
-	h3{
+	img{
+		position: absolute;
+		top:-$margin-large;
+		left: -$margin-large;
+	}
+	&-title{
 		position: absolute;
 		top:-$margin-large;
 		font-size:$font-title-footer-sub ;
@@ -42,5 +53,6 @@
 	display: block;
 	text-align: end;
 	margin: $margin-large 10%;
+	color:$color-gray;
 }
 }

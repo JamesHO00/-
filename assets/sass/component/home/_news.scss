@@ -1,26 +1,41 @@
 .news{
 	position: relative;
+	margin-left: 15%;
+	width: 50%;
 	&__title{
 		font-size:$font-title;
 		padding: $padding-base 0;
+		color:$color-accent;
 	}
 	&__icon{
 		position: absolute;
+		width: 27.27%;
 		top:0;
-		left: -55px;
+		left: -27.27%;
 		img{
-			width: $icon-large;
+			width: 100%;
 			transform: rotate(90deg);
+		}
+	}
+	&__figure{
+		position: absolute;
+		width: 65.45%;
+		bottom: 0;
+		right: -65.45%;
+		img{
+			width: 100%;
+			transform: scaleX(-1);
 		}
 	}
 	&__content{
 		padding-bottom: $padding-base;
 		li{
-			border-bottom: 1px solid #000000;
+			border-bottom: 1px solid $color-accent-dark;
 			margin: $margin-base 0;
 			padding-bottom: $padding-base;
 			p{
 				font-size: $font-navbar;
+				color:$color-accent-dark;
 			}
 		}
 	}
@@ -28,5 +43,6 @@
 		display: block;
 		font-size: $font-date;
 		margin:$margin-small 0;
+		color:$color-accent-dark;
 	}
 }

@@ -13,7 +13,9 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="#" class="navbar__logo">Logo</a>
+      <a href="#" class="navbar__logo"
+        ><img src="assets/public/logo/logo.png" alt="logo"
+      /></a>
       <ul class="navbar__link">
         <li><a href="#">關於我們</a></li>
         <li><a href="#">最新消息</a></li>
@@ -24,12 +26,16 @@
       <ul class="navbar__outside-link">
         <li>
           <a href="#"
-            ><img src="assets/icon/facebook.png" alt="facebook-icon"
+            ><img
+              src="assets/public/icon/blackicon/facebook.png"
+              alt="facebook-icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="assets/icon/instagram.png" alt="instagram-icon"
+            ><img
+              src="assets/public/icon/blackicon/instagram.png"
+              alt="instagram-icon"
           /></a>
         </li>
       </ul>
@@ -42,9 +48,12 @@
     <main class="main">
       <article class="news">
         <h2 class="news__title">最新消息</h2>
-        <!-- <i class="news__icon"
-          ><img src="assets/icon/1sea-snail.png" alt="貝殼"
-        /></i> -->
+        <i class="news__icon"
+          ><img src="assets/public/icon/shell-1.png" alt="貝殼"
+        /></i>
+        <i class="news__figure"
+          ><img src="assets/public/figure/blackbear.png" alt="台灣黑熊"
+        /></i>
         <ul class="news__content">
           <li>
             <sub class="news__date">2022.5.13</sub>
@@ -66,63 +75,75 @@
         <!-- <i><img src="/assets/figure/blackbear.png" alt="黑熊" /></i> -->
       </article>
       <article class="event">
+        <i class="event__icon"
+          ><img src="assets/public/icon/shell2 .png" alt=""
+        /></i>
         <h2 class="event__title">展演活動</h2>
-        <div class="event__container">
-          <!-- <button>
-            <span class="material-symbols-outlined"> arrow_back_ios </span>
-          </button> -->
-          <section class="event__item">
-            <div></div>
-            <!-- <img src="/assets/picture/event1.png" alt="" /> -->
+        <ul class="event__container">
+          <li class="event__item">
+            <img src="assets/public/picture/event/event-1.png" alt="" />
             <aside class="event__info">
               <h3 class="event__name">旗津黑沙玩藝節</h3>
               <a href="#">more></a>
             </aside>
-          </section>
-          <section class="event__item">
-            <div></div>
-            <!-- <img src="/assets/picture/event2.jpg" alt="" /> -->
+          </li>
+          <li class="event__item">
+            <img src="assets/public/picture/event/event-2.png" alt="" />
             <aside class="event__info">
               <h3 class="event__name">循環綠活節</h3>
               <a href="#">more></a>
             </aside>
-          </section>
-          <section class="event__item">
-            <div></div>
-            <!-- <img src="/assets/picture/event3.jpg" alt="" /> -->
+          </li>
+          <li class="event__item">
+            <img src="assets/public/picture/event/event-3.png" alt="" />
             <aside class="event__info">
               <h3 class="event__name">旗津醉蝦趴</h3>
               <a href="#">more></a>
             </aside>
-          </section>
-          <!-- <button>
-            <span class="material-symbols-outlined"> arrow_forward_ios </span>
-          </button> -->
-        </div>
+          </li>
+        </ul>
+        <button class="event__button-1">
+          <span class="material-symbols-outlined"> arrow_back_ios </span>
+        </button>
+        <button class="event__button-2">
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
       </article>
       <article class="map">
-        <img class="map__deer" src="assets/figure/deer.png" alt="鹿" />
-        <div class="map__location"></div>
-        <!-- <img src="/assets/picture/map.png" alt="旗津位置" /> -->
+        <img class="map__deer" src="assets/public/figure/deer.png" alt="鹿" />
+        <img
+          class="map__location"
+          src="assets/public/picture/map/map.png"
+          alt="旗津位置"
+        />
       </article>
     </main>
     <footer class="footer">
       <section class="footer__logo">
-        <div></div>
+        <img src="assets/public/logo/logo.png" alt="logo" />
         <h3>旗津 Chiji</h3>
       </section>
-      <section class="footer__info">
-        <h3 class="footer__info__contact-e">Contact Us</h3>
-        <h2 class="footer__info__contact-c">聯絡我們</h2>
-        <p class="footer__info__address">振興里 高雄市旗津區</p>
-        <p class="footer__info__email">a390000@kcg.gov.tw</p>
-        <p class="footer__info__phone">07-7995678</p>
-      </section>
-      <section class="footer__visits">
-        <h3 class="footer__visits-e">Visits</h3>
-        <h2 class="footer__visits-c">造訪人次</h2>
-        <p class="footer__visits__update">更新時間 2022.5.21</p>
-      </section>
+      <ul class="footer__info">
+        <li class="footer__info__contact-e">Contact Us</li>
+        <li class="footer__info__contact-c">聯絡我們</li>
+        <li class="footer__info__address">振興里 高雄市旗津區</li>
+        <li class="footer__info__email">
+          <img src="assets/public/icon/email.png" alt="" />a390000@kcg.gov.tw
+        </li>
+        <li class="footer__info__phone">
+          <img src="assets/public/icon/phone.png" alt="" />07-7995678
+        </li>
+      </ul>
+
+      <ul class="footer__visits">
+        <li class="footer__visits-e">Visits</li>
+        <li class="footer__visits-c">造訪人次</li>
+        <li class="footer__visits__update">更新時間 2022.5.21</li>
+        <li>
+          <a href="#"> <img src="assets/public/icon/facebook.png" alt="" /></a>
+          <a href="#"><img src="assets/public/icon/instagram.png" alt="" /></a>
+        </li>
+      </ul>
       <p class="footer__copyright">©高雄旗津 All rights reserved.</p>
     </footer>
   </body>

@@ -1,15 +1,11 @@
 .footer{
 	@extend %flex-around;
-	background-color: blanchedalmond;
+	background-color: $color-accent;
 	width: 100%;
 	height: 300px;
 	position: relative;
+	color:$color-white;
 	&__logo{
-		div{
-			width: 150px;
-			height: 150px;
-			background-color: aqua;
-		}
 		h3{
 			margin-top: $margin-base;
 			font-size: $font-title-footer;
@@ -17,6 +13,11 @@
 		}
 	}
 	&__info{
+		img{
+			width:$icon-small ;
+			height: $icon-small;
+			margin-right: $margin-small;
+		}
 		&__contact-e{
 	font-size: $font-navbar;
 		}
@@ -26,7 +27,7 @@
 		}
 		&__address{
 			font-size: $font-navbar;
-	margin: $margin-base 0;
+		margin: $margin-base 0;
 		}
 &__phone{
 	margin-top: $margin-small;
@@ -40,10 +41,19 @@
 			margin: $margin-small 0;
 			font-size: $font-title-footer-sub;
 		}
+		&__update{
+			margin-bottom:$icon-base ;
+		}
+		img{
+			margin-right:$margin-base ;
+			width: $icon-small;
+			height: $icon-small;
+		}
 	}
 	&__copyright{
 		font-size: $font-date;
 		position: absolute;
 		bottom:0;
+		color:$color-white ;
 	}
 }
