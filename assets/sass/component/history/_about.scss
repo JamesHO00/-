@@ -5,22 +5,13 @@
   height: 80vh;
   position: relative;
   overflow: hidden;
-  margin-bottom: $margin-large;
-  img{
-    position: absolute;
-    width: $icon-large;
-    height: $icon-large;
-    left: 7.8125%;
-    bottom: -5%;
-    z-index: 10;
-  }
 	&__container{
 		position: absolute;
-		bottom: -10%;
+		bottom: -5%;
     left: -5%;
     background-color:$color-white;
     width: 30.21%;
-    height: $navbar-height;
+    height: $header-title;
     border-radius: $margin-large;
 	}
 	&__title{
@@ -28,5 +19,14 @@
     color:$color-accent-dark;
 		padding: $margin-large $padding-base;
 		font-size:$font-title;
+    &::before{
+      display: inline-block;
+      content: '';
+      width: $icon-base;
+      height: $icon-base;
+      background-image: url(../public/icon/shell-3.png);
+      background-position: center;
+      background-size: cover;
+    }
 	}
 }
