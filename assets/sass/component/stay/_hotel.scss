@@ -63,6 +63,16 @@
 		position: absolute;
 		top:-$margin-large;
 		font-size:$font-title-footer-sub ;
+		margin-left: -25px;
+		&::before{
+			display: inline-block;
+			content: '';
+			width:25px ;
+			height: 25px;
+			background-image: url(../public/icon/megaphone.png);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 	}
 }
 }
