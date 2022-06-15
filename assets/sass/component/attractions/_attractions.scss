@@ -4,14 +4,15 @@
   width: 100%;
   height: 80vh;
   position: relative;
-	overflow: hidden;
+
   img{
     position: absolute;
     width: 29.0625%;
     transform: scaleX(-1);
-    bottom: -10%;
-    right: -2%;
+    bottom: -30%;
+    right: -5%;
   }
+
 	&__container{
 		position: absolute;
 		bottom: 0;
@@ -20,19 +21,20 @@
     height: $header-title;
     border-top-right-radius: $margin-large;
 	}
+
   &__title{
     text-align: center;
     color:$color-accent-dark;
 		padding: $margin-large 0;
 		font-size:$font-title;
+
     &::before{
       display: inline-block;
       content: '';
       width: $icon-base;
       height: $icon-base;
       background-image: url(../public/icon/shell-5.png);
-      background-position: center;
-      background-size: cover;
+      @extend %background-title-icon;
     }
   }
 }

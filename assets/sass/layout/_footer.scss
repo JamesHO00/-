@@ -7,13 +7,11 @@
 	color:$color-white;
 	box-sizing: content-box;
 	&::before{
+		@extend %background-img-position;
 		position: absolute;
 		top:-198px;
 		left: 0;
 		background-image: url(../public/picture/footer-cover/wave.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
 		content: '';
 		display: block;
 		width: 100%;

@@ -1,5 +1,4 @@
 .main{
-	width: 84.167%;
-	margin: 10vh auto;
-	margin-bottom: 30vh;
+@extend %layout-main;
+margin-bottom: 25vh;
 }

@@ -2,43 +2,52 @@
 	position: relative;
 	margin-left: 9.025%;
 	width: 65.975%;
+
 	&__title{
 		font-size:$font-title;
 		padding: $padding-base 0;
 		color:$color-accent;
 	}
+
 	&__icon{
 		position: absolute;
 		width: 9.025%;
 		top:0;
 		left: -9.025%;
+
 		img{
 			width: 100%;
 			transform: rotate(90deg);
 		}
 	}
+
 	&__figure{
 		position: absolute;
 		width: 25%;
 		bottom: 0;
 		right: -25%;
+
 		img{
 			width: 100%;
 			transform: scaleX(-1);
 		}
 	}
+
 	&__content{
 		padding-bottom: $padding-base;
+
 		li{
 			border-bottom: 1px solid $color-accent-dark;
 			margin: $margin-base 0;
 			padding-bottom: $padding-base;
+
 			p{
 				font-size: $font-navbar;
 				color:$color-accent-dark;
 			}
 		}
 	}
+
 	&__date{
 		display: block;
 		font-size: $font-date;

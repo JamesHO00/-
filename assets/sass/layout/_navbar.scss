@@ -1,8 +1,6 @@
 .navbar{
 	@extend %flex-between;
-	height: $navbar-height;
-	width: 84.167%;
-	margin: 0 auto;
+	@extend %layout-navbar;
 	font-size:$font-navbar;
 
 	&__logo{
@@ -15,10 +13,8 @@
 	}
 
 	&__link{
+		@extend%flex-inline-end-center;
 		flex:1;
-		display: inline-flex;
-		justify-content: flex-end;
-		align-items: center;
 		height: $navbar-height;
 		li{
 			position: relative;
@@ -34,23 +30,28 @@
 			width: 120%;
 			position: absolute;
 			left: 0;
-			z-index: 10;
-			background-color: white;
+			z-index:$index-on;
+			background-color: $color-white;
 			visibility: hidden;
+
 			li{
 				padding: $padding-base 0 $padding-base 0;
-				border-bottom: 1px solid blue;
+				border-bottom: 1px solid $color-accent;
+
 				a{
 					padding-left: 0;
 				}
+
 				&:nth-child(1){
-					padding-top: 40px;
+					padding-top: $padding-large;
 				}
+
 				&:nth-last-child(1){
 					border: none;
 				}
 			}
 		}
+
 		li:hover>ul{
 			visibility: visible;
 		}

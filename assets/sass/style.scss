@@ -4,9 +4,11 @@
 @import 'variable/color';
 @import 'variable/layout';
 @import 'variable/font-size';
+@import 'variable/z-index';
 // mixin
 @import 'mixin/flex-box';
 @import 'mixin/background';
+@import 'mixin/layout';
 
 // layout
 @import 'layout/body';
@@ -16,14 +18,18 @@
 @import 'layout/footer';
 
 // component
+// homepage
 @import 'component/home/home';
 @import 'component/home/event';
 @import 'component/home/map';
 @import 'component/home/news';
+// about us
 @import 'component/history/about';
 @import 'component/history/history';
+// stay
 @import 'component/stay/stay';
 @import 'component/stay/hotel';
+// attractions
 @import 'component/attractions/attractions';
 @import 'component/attractions/tourist-spots';
 @import 'component/attractions/destinations';

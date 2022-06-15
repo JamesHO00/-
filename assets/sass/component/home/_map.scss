@@ -1,15 +1,17 @@
 .map{
 	@extend %flex-center;
 	margin-top: $margin-base;
+
 	&__deer{
 		width: 16.49%;
-
 	}
+
 &__location{
 width: 62.72%;
 border: 1px solid $color-accent;
 border-radius: $border-radius-base;
 margin-left:$margin-small;
+
 img{
 	width: 100%;
 }

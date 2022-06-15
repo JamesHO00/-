@@ -20,3 +20,15 @@
 	justify-content: space-around;
 	align-items: center;
 }
+
+%flex-inline-end-center{
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+%flex-space-between-wrap{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}

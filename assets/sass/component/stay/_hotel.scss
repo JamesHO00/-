@@ -1,40 +1,46 @@
 .hotel{
 	position: relative;
 	color:$color-accent-dark;
+
 &__image{
 	width: 100%;
-	border-radius: 20px;
+	border-radius:$border-radius-base;
 }
+
 &__title{
 	margin-top: $margin-base;
 	font-size :$font-title-footer-sub; ;
 }
+
 &__introduce{
 	margin-top: $margin-base;
+
 	&__contact{
 		width: 80%;
 		margin: $margin-large auto;
+
 		&-address{
 		display: inline-block;
+
 			&::before{
 				display: inline-block;
 				content: '';
 				background-image: url(../public/icon/blackicon/location.png);
-				background-position: center;
-				background-size: cover;
+				@extend %background-title-icon;
 				width: $icon-small;
 				height: $icon-small;
 			}
 		}
 		&-phone{
 			display: inline-block;
+
 			&::before{
 				display: inline-block;
 				margin-left: $margin-big;
+
 				content: '';
 				background-image: url(../public/icon/blackicon/phone.png);
-				background-position: center;
-				background-size: cover;
+				@extend %background-title-icon;
 				width: $icon-small;
 				height: $icon-small;
 			}
@@ -48,34 +54,38 @@
 	margin: 0 auto;
 	background-color: $color-accent-light;
 	width: 80%;
-	height: 250px;
-	border-radius: 50px;
+	height: $main-section-height;
+	border-radius: $border-radius-large;
 	color:$color-white;
+
 &__items{
 	position: relative;
 	font-size: $font-navbar;
+
 	img{
 		position: absolute;
 		top:-$margin-large;
 		left: -$margin-large;
 	}
+
 	&-title{
 		position: absolute;
 		top:-$margin-large;
 		font-size:$font-title-footer-sub ;
-		margin-left: -25px;
+		margin-left: -$margin-base-large;
+
 		&::before{
 			display: inline-block;
 			content: '';
-			width:25px ;
-			height: 25px;
+			width:$icon-small ;
+			height: $icon-small;
 			background-image: url(../public/icon/megaphone.png);
-			background-position: center;
-			background-repeat: no-repeat;
+			@extend %main-title-icon;
 		}
 	}
 }
 }
+
 &__link{
 	display: block;
 	text-align: end;

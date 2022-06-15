@@ -1,6 +1,6 @@
 .home{
-	width: 100%;
-	height: 80vh;
+	width: inherit;
+	height: inherit;
   background-image: url(../public/picture/header-cover/home.png);
 	@extend %background-img-position;
 	@extend %flex-center;
