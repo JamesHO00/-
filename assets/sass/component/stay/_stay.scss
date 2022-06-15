@@ -7,17 +7,16 @@
 	overflow: hidden;
 	&__container{
 		position: absolute;
-		bottom: -5%;
-    left: -5%;
+		bottom: 0;
     background-color: $color-white;
     width: 30.21%;
-    height: $header-title;;
-    border-radius: $margin-large;
+    height: $header-title;
+    border-top-right-radius: $margin-large;
 	}
   &__title{
-    text-align: end;
+    text-align: center;
     color:$color-accent-dark;
-		padding: $margin-large $padding-base;
+		padding: $margin-large 0;
 		font-size:$font-title;
     &::before{
       display: inline-block;
