@@ -9,11 +9,12 @@
     position: absolute;
     width: 29.0625%;
     transform: scaleX(-1);
-    bottom: -30%;
+    bottom: -10%;
     right: -5%;
   }
 
 	&__container{
+    @extend %flex-center;
 		position: absolute;
 		bottom: 0;
     background-color: $color-white;
@@ -25,11 +26,14 @@
   &__title{
     text-align: center;
     color:$color-accent-dark;
-		padding: $margin-large 0;
 		font-size:$font-title;
+    position: relative;
 
     &::before{
-      display: inline-block;
+      position: absolute;
+      display: block;
+      bottom:-10px;
+      left: -100px;
       content: '';
       width: $icon-base;
       height: $icon-base;

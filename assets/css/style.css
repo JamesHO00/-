@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-.home, .event button, .map, .destinations__items__title {
+.home, .event button, .map, .about-us__container, .stay__container, .attractions__container, .destinations__items__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +232,7 @@ a {
 }
 
 .main {
-  margin-bottom: 25vh;
+  margin-bottom: 30vh;
 }
 
 .footer {
@@ -497,15 +497,18 @@ a {
 .about-us__title {
   text-align: center;
   color: #123C62;
-  padding: 40px 0;
   font-size: 1.5rem;
+  position: relative;
 }
 
 .about-us__title::before {
-  display: inline-block;
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  left: -100px;
   content: '';
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background-image: url(../public/icon/shell-3.png);
 }
 
@@ -540,15 +543,18 @@ a {
 .stay__title {
   text-align: center;
   color: #123C62;
-  padding: 40px 0;
   font-size: 1.5rem;
+  position: relative;
 }
 
 .stay__title::before {
-  display: inline-block;
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  left: -100px;
   content: '';
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background-image: url(../public/icon/shell-4.png);
 }
 
@@ -656,7 +662,7 @@ a {
   width: 29.0625%;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-  bottom: -30%;
+  bottom: -10%;
   right: -5%;
 }
 
@@ -672,15 +678,18 @@ a {
 .attractions__title {
   text-align: center;
   color: #123C62;
-  padding: 40px 0;
   font-size: 1.5rem;
+  position: relative;
 }
 
 .attractions__title::before {
-  display: inline-block;
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  left: -100px;
   content: '';
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background-image: url(../public/icon/shell-5.png);
 }
 
