@@ -6,7 +6,7 @@
   position: relative;
 
 	&__container{
-    @extend %flex-center;
+    @extend %flex-center-end;
 		position: absolute;
 		bottom: 0;
     background-color: $color-white;
@@ -19,13 +19,15 @@
     text-align: center;
     color:$color-accent-dark;
 		font-size:$font-title;
+    padding-bottom: $padding-small;
+    padding-left: $padding-big;
     position: relative;
 
     &::before{
       position: absolute;
-      display: block;
-      bottom:-10px;
-      left: -100px;
+      display: inline-block;
+      bottom:0;
+      left: -40px;
       content: '';
       width: $icon-base;
       height: $icon-base;

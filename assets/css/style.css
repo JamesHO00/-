@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-.home, .event button, .map, .about-us__container, .stay__container, .attractions__container, .destinations__items__title {
+.home, .event button, .map, .destinations__items__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +109,18 @@ table {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.about-us__container, .stay__container, .attractions__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .footer::before, .home, .about-us, .stay, .attractions {
@@ -172,13 +184,10 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 100px;
 }
 
 .navbar__link li {
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .navbar__link a {
@@ -187,15 +196,20 @@ a {
 }
 
 .navbar__link-sub {
-  width: 120%;
+  width: 100%;
   position: absolute;
-  left: 0;
+  margin-top: 37px;
   z-index: 10;
   background-color: #ffffff;
-  visibility: hidden;
+  display: none;
+}
+
+.navbar__link-sub.active {
+  display: block;
 }
 
 .navbar__link-sub li {
+  text-align: center;
   padding: 20px 0 20px 0;
   border-bottom: 1px solid #3DA3FF;
 }
@@ -204,16 +218,8 @@ a {
   padding-left: 0;
 }
 
-.navbar__link-sub li:nth-child(1) {
-  padding-top: 40px;
-}
-
 .navbar__link-sub li:nth-last-child(1) {
   border: none;
-}
-
-.navbar__link li:hover > ul {
-  visibility: visible;
 }
 
 .navbar__outside-link {
@@ -498,17 +504,19 @@ a {
   text-align: center;
   color: #123C62;
   font-size: 1.5rem;
+  padding-bottom: 10px;
+  padding-left: 50px;
   position: relative;
 }
 
 .about-us__title::before {
   position: absolute;
-  display: block;
-  bottom: -10px;
-  left: -100px;
+  display: inline-block;
+  bottom: 0;
+  left: -40px;
   content: '';
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-image: url(../public/icon/shell-3.png);
 }
 
@@ -544,17 +552,19 @@ a {
   text-align: center;
   color: #123C62;
   font-size: 1.5rem;
+  padding-bottom: 10px;
+  padding-left: 50px;
   position: relative;
 }
 
 .stay__title::before {
   position: absolute;
-  display: block;
-  bottom: -10px;
-  left: -100px;
+  display: inline-block;
+  bottom: 0;
+  left: -40px;
   content: '';
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-image: url(../public/icon/shell-4.png);
 }
 
@@ -679,17 +689,19 @@ a {
   text-align: center;
   color: #123C62;
   font-size: 1.5rem;
+  padding-bottom: 10px;
+  padding-left: 50px;
   position: relative;
 }
 
 .attractions__title::before {
   position: absolute;
-  display: block;
-  bottom: -10px;
-  left: -100px;
+  display: inline-block;
+  bottom: 0;
+  left: -40px;
   content: '';
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-image: url(../public/icon/shell-5.png);
 }
 

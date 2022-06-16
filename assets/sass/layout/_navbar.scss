@@ -15,10 +15,9 @@
 	&__link{
 		@extend%flex-inline-end-center;
 		flex:1;
-		height: $navbar-height;
+
 		li{
 			position: relative;
-			box-sizing: border-box;
 		}
 
 		a{
@@ -27,14 +26,19 @@
 		}
 
 		&-sub{
-			width: 120%;
+			width: 100%;
 			position: absolute;
-			left: 0;
+			margin-top: 37px;
 			z-index:$index-on;
 			background-color: $color-white;
-			visibility: hidden;
+			display: none;
+
+			&.active{
+				display: block;
+			}
 
 			li{
+				text-align: center;
 				padding: $padding-base 0 $padding-base 0;
 				border-bottom: 1px solid $color-accent;
 
@@ -42,18 +46,10 @@
 					padding-left: 0;
 				}
 
-				&:nth-child(1){
-					padding-top: $padding-large;
-				}
-
 				&:nth-last-child(1){
 					border: none;
 				}
 			}
-		}
-
-		li:hover>ul{
-			visibility: visible;
 		}
 	}
 
