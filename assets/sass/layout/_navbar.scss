@@ -18,6 +18,11 @@
 
 		li{
 			position: relative;
+			overflow: hidden;
+			&:hover{
+				overflow: visible;
+			}
+
 		}
 
 		a{
@@ -26,29 +31,25 @@
 		}
 
 		&-sub{
-			width: 100%;
 			position: absolute;
-			margin-top: 37px;
-			z-index:$index-on;
+			width: 100%;
 			background-color: $color-white;
-			display: none;
-
-			&.active{
-				display: block;
-			}
+			padding-top: 37.405px;
+			z-index: $index-on;
 
 			li{
 				text-align: center;
-				padding: $padding-base 0 $padding-base 0;
 				border-bottom: 1px solid $color-accent;
+				padding: 20px 0;
+
+				&:last-child{
+					border:none
+				}
 
 				a{
 					padding-left: 0;
 				}
 
-				&:nth-last-child(1){
-					border: none;
-				}
 			}
 		}
 	}

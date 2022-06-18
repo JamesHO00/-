@@ -1,3 +1,82 @@
-.header {
+header {
 @extend %layout-header;
+}
+.header{
+	&__home{
+		background-image: url(../public/picture/header-cover/home.png);
+		@extend %background-img-position;
+		@extend %flex-center;
+		color:$color-white;
+		&__title{
+			font-size: $font-big-title;
+		}
+	}
+
+	&__about-us{
+		@extend %background-img-position;
+		background-image: url(../public/picture/header-cover/about.png);
+		position: relative;
+		&__container{
+			@extend %layout-header-section;
+			&__title{
+				@extend %layout-header-title;
+			}
+			img{
+				@extend %layout-header-icon;
+			}
+		}
+	}
+
+	&__stay{
+		@extend %background-img-position;
+		background-image: url(../public/picture/header-cover/stay.png);
+		position: relative;
+		&__container{
+			@extend %layout-header-section;
+			&__title{
+				@extend %layout-header-title;
+			}
+			img{
+				@extend %layout-header-icon;
+			}
+		}
+	}
+
+	&__attractions{
+		@extend %background-img-position;
+		background-image: url(../public/picture/header-cover/attractions.png);
+		position: relative;
+		&__container{
+			@extend %layout-header-section;
+			&__title{
+				@extend %layout-header-title;
+			}
+			img{
+				@extend %layout-header-icon;
+			}
+		}
+		&__animal{
+			position: absolute;
+			width: 29.0625%;
+			transform: scaleX(-1);
+			bottom: -10%;
+			right: -5%;
+		}
+	}
+
+	&__news{
+		@extend %background-img-position;
+		background-image: url(../public/picture/header-cover/news.png);
+		position: relative;
+		&__container{
+			@extend %layout-header-section;
+			&__title{
+				@extend %layout-header-title;
+			}
+			img{
+				@extend %layout-header-icon;
+				transform: rotate(90deg);
+			}
+		}
+	}
 }
