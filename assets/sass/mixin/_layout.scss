@@ -20,18 +20,18 @@
 	bottom: 0;
 	background-color: $color-white;
 	width: 30.21%;
-	height: $header-title;
-	border-top-right-radius: 70px;
+	height: $navbar-height;
+	border-top-right-radius: $border-radius-large;
 }
 
 %layout-header-title{
 	color:$color-accent-dark;
 	font-size:$font-title;
-	padding-bottom: $padding-small;
-	padding-left: 30px;
+	padding-bottom: $margin-small;
+	padding-left: $margin-big;
 }
 
 %layout-header-icon{
-	width: 70px ;
-  height: 70px;
+	width: $icon-base ;
+  height: $icon-base;
 }

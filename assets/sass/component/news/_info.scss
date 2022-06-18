@@ -1,25 +1,29 @@
 .info{
-	margin-bottom: 30px;
+	margin-bottom: $margin-big;
 	border-bottom: 1px solid $color-underline;
 	color:$color-accent-dark;
 	overflow: hidden;
 	&__date{
-		padding-bottom: 20px;
+		padding-bottom: $margin-base;
 	}
 	&__title{
-		padding-bottom: 50px;
-		padding-top:20px ;
+		padding-bottom: $margin-base-hue;
+		padding-top:$margin-base ;
 		position: relative;
 		cursor: pointer;
 		&__button{
 			position: absolute;
-			top:20px;
+			top:$margin-base;
 			right: 0;
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
+			width: $margin-big;
+			height: $margin-big;
+			border-radius: $border-radius-circle;
 			background-color: $color-accent-blue;
+			transition: transform 300ms ;
 			cursor: pointer;
+			&.active{
+				transform: rotate(-180deg);
+			}
 			&::before,&::after{
 				position: absolute;
         content: '';
@@ -52,13 +56,13 @@
 			div{
 				width:94.01% ;
 				margin: 0 auto;
-				padding: 30px 0 30px 0;
+				padding: $margin-big 0 $margin-big 0;
 			}
 			img{
 				width: 100%;
 			}
 			p{
-				padding-top: 20px;
+				padding-top: $margin-base;
 				text-align: justify;
 			}
 		}

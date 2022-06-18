@@ -3,7 +3,7 @@ position: relative;
 
 &__icon{
 	position: absolute;
-	width: 5.946%;
+	width: 70px;
 
 	img{
 		width: 100%;
@@ -11,10 +11,10 @@ position: relative;
 }
 
 &__title{
-	width: 94.05%;
-	margin-left: 5.946%;
+	width: 93%;
+	margin-left: 70px;
 	font-size:$font-title;
-	padding: $padding-base 0;
+	padding: $margin-base 0;
 	color:$color-accent;
 }
 
@@ -47,8 +47,8 @@ position: relative;
 
 button{
 	@extend %flex-center;
-	width: $padding-large;
-	height: $padding-large;
+	width: $margin-large;
+	height: $margin-large;
 	border: none;
 	border-radius: $border-radius-circle;
 	position: absolute;

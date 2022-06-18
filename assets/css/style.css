@@ -162,7 +162,7 @@ header {
   background-color: #ffffff;
   width: 30.21%;
   height: 100px;
-  border-top-right-radius: 70px;
+  border-top-right-radius: 50px;
 }
 
 .header__about-us__container__title, .header__stay__container__title, .header__attractions__container__title, .header__news__container__title {
@@ -378,7 +378,7 @@ main {
 }
 
 .footer__visits__update {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .footer__visits img {
@@ -400,7 +400,7 @@ main {
 
 .event__icon {
   position: absolute;
-  width: 5.946%;
+  width: 70px;
 }
 
 .event__icon img {
@@ -408,8 +408,8 @@ main {
 }
 
 .event__title {
-  width: 94.05%;
-  margin-left: 5.946%;
+  width: 93%;
+  margin-left: 70px;
   font-size: 1.5rem;
   padding: 20px 0;
   color: #3DA3FF;
@@ -468,7 +468,7 @@ main {
 
 .map__location {
   width: 62.72%;
-  border: 1px solid #3DA3FF;
+  border: 2px solid #3DA3FF;
   border-radius: 40px;
   margin-left: 10px;
 }
@@ -479,8 +479,8 @@ main {
 
 .news {
   position: relative;
-  margin-left: 9.025%;
-  width: 65.975%;
+  margin-left: 7%;
+  width: 66%;
 }
 
 .news__title {
@@ -491,9 +491,9 @@ main {
 
 .news__icon {
   position: absolute;
-  width: 9.025%;
+  width: 70px;
   top: 0;
-  left: -9.025%;
+  left: -70px;
 }
 
 .news__icon img {
@@ -504,9 +504,9 @@ main {
 
 .news__figure {
   position: absolute;
-  width: 25%;
+  width: 27%;
   bottom: 0;
-  right: -25%;
+  right: -27%;
 }
 
 .news__figure img {
@@ -520,7 +520,7 @@ main {
 }
 
 .news__content li {
-  border-bottom: 1px solid #123C62;
+  border-bottom: 2px solid #3DA3FF;
   margin: 20px 0;
   padding-bottom: 20px;
 }
@@ -591,7 +591,7 @@ main {
 
 .hotel__introduce__contact-phone::before {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 30px;
   content: '';
   background-image: url(../public/icon/blackicon/phone.png);
   width: 25px;
@@ -623,7 +623,7 @@ main {
   position: absolute;
   top: -40px;
   font-size: 1.375rem;
-  margin-left: -25px;
+  margin-left: -30px;
 }
 
 .hotel__feature__items-title::before {
@@ -715,7 +715,16 @@ main {
   height: 30px;
   border-radius: 50%;
   background-color: #8FC7F9;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
   cursor: pointer;
+}
+
+.info__title__button.active {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .info__title__button::before, .info__title__button::after {

@@ -1,19 +1,19 @@
 .news{
 	position: relative;
-	margin-left: 9.025%;
-	width: 65.975%;
+	margin-left: 7%;
+	width: 66%;
 
 	&__title{
 		font-size:$font-title;
-		padding: $padding-base 0;
+		padding: $margin-base 0;
 		color:$color-accent;
 	}
 
 	&__icon{
 		position: absolute;
-		width: 9.025%;
+		width: 70px;
 		top:0;
-		left: -9.025%;
+		left: -70px;
 
 		img{
 			width: 100%;
@@ -23,9 +23,9 @@
 
 	&__figure{
 		position: absolute;
-		width: 25%;
+		width: 27%;
 		bottom: 0;
-		right: -25%;
+		right: -27%;
 
 		img{
 			width: 100%;
@@ -34,12 +34,12 @@
 	}
 
 	&__content{
-		padding-bottom: $padding-base;
+		padding-bottom: $margin-base;
 
 		li{
-			border-bottom: 1px solid $color-accent-dark;
+			border-bottom: 2px solid $color-accent;
 			margin: $margin-base 0;
-			padding-bottom: $padding-base;
+			padding-bottom: $margin-base;
 
 			p{
 				font-size: $font-navbar;
