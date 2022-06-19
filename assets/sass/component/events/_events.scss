@@ -1,0 +1,38 @@
+.events{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__cards{
+		width:450px ;
+		height: 470px;
+		margin-bottom: 40px;
+		&__image{
+			width: 100%;
+			margin: 0 auto;
+			border-radius: 30px;
+		}
+		&__info{
+			margin-top: 30px;
+			&__date{
+				color:$color-accent-dark;
+			}
+			&__title{
+				position: relative;
+				margin-top:20px;
+				font-size:$font-navbar ;
+				color:$color-accent-dark;
+				span{
+					position: absolute;
+					right: 0;
+					font-size: $font-date;
+					background-color: $color-accent-blue;
+					border-radius: 10px;
+					a{
+						color:$color-white;
+						padding: 20px 10px;
+					}
+				}
+			}
+		}
+	}
+}

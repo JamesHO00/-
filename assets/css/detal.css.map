@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/component/events/detal.scss"
+    ],
+    "names": [],
+    "file": "detal.css"
+}

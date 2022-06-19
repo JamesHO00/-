@@ -79,4 +79,19 @@ header {
 			}
 		}
 	}
+
+	&__events{
+		@extend %background-img-position;
+		background-image: url(../public/picture/header-cover/events.png);
+		position: relative;
+		&__container{
+			@extend %layout-header-section;
+			&__title{
+				@extend %layout-header-title;
+			}
+			img{
+				@extend %layout-header-icon;
+			}
+		}
+	}
 }
