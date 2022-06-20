@@ -1,0 +1,71 @@
+.food{
+	color:$color-accent-dark;
+	&__card-1{
+		position: relative;
+		margin: 40px 0;
+		img{
+			width: 50%;
+		}
+		&__info{
+			text-align: justify;
+			position: absolute;
+			width: 52%;
+			background-color: $color-white;
+			bottom: 0;
+			right: 0;
+			padding: 30px;
+			border-radius: 30px;
+			border-bottom-left-radius: 0px;
+			h2{
+				padding: 30px 0;
+				padding-top: 0px;
+				font-size: $font-link;
+			}
+			a{
+				position: absolute;
+				bottom: 30px;
+				right: 30px;
+				padding: 10px 20px;
+				border-radius: 30px;
+				font-size: $font-navbar;
+				color: $color-white;
+				background-color: $color-accent-light;
+
+			}
+		}
+	}
+	&__card-2{
+		text-align: end;
+		position: relative;
+		margin: 40px 0;
+		img{
+			width: 50%;
+		}
+		&__info{
+			text-align: justify;
+			position: absolute;
+			width: 52%;
+			background-color:$color-white;
+			bottom: 0;
+			left: 0;
+			padding: 30px;
+			border-radius: 30px;
+			border-bottom-right-radius: 0px;
+			h2{
+				padding: 30px 0;
+				padding-top: 0px;
+				font-size: $font-link;
+			}
+			a{
+				position: absolute;
+				bottom: 30px;
+				right: 30px;
+				padding: 10px 20px;
+				border-radius: 30px;
+				font-size: $font-navbar;
+				color: $color-white;
+				background-color: $color-accent-light;
+			}
+		}
+	}
+}

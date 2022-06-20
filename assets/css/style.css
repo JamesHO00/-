@@ -100,7 +100,7 @@ table {
           align-items: center;
 }
 
-.tourist-spots__link {
+.tourist-spots__link, .foods__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +111,7 @@ table {
       flex-wrap: wrap;
 }
 
-.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container {
+.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container, .header__food__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +123,7 @@ table {
           align-items: flex-end;
 }
 
-.header__home, .header__about-us, .header__stay, .header__attractions, .header__news, .header__events, .footer::before {
+.header__home, .header__about-us, .header__stay, .header__attractions, .header__news, .header__events, .header__food, .footer::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,7 +156,7 @@ header {
   height: 80vh;
 }
 
-.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container {
+.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container, .header__food__container {
   position: absolute;
   bottom: 0;
   background-color: #ffffff;
@@ -165,14 +165,14 @@ header {
   border-top-right-radius: 50px;
 }
 
-.header__about-us__container__title, .header__stay__container__title, .header__attractions__container__title, .header__news__container__title, .header__events__container__title {
+.header__about-us__container__title, .header__stay__container__title, .header__attractions__container__title, .header__news__container__title, .header__events__container__title, .header__food__container__title {
   color: #123C62;
   font-size: 1.5rem;
   padding-bottom: 10px;
   padding-left: 30px;
 }
 
-.header__about-us__container img, .header__stay__container img, .header__attractions__container img, .header__news__container img, .header__events__container img {
+.header__about-us__container img, .header__stay__container img, .header__attractions__container img, .header__news__container img, .header__events__container img, .header__food__container img {
   width: 70px;
   height: 70px;
 }
@@ -303,6 +303,11 @@ a {
 
 .header__events {
   background-image: url(../public/picture/header-cover/events.png);
+  position: relative;
+}
+
+.header__food {
+  background-image: url(../public/picture/header-cover/food.jpg);
   position: relative;
 }
 
@@ -778,6 +783,7 @@ main {
 }
 
 .info__container p {
+  padding: 0 30px;
   padding-top: 20px;
   text-align: justify;
 }
@@ -906,5 +912,104 @@ main {
   top: -8px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.foods__link {
+  margin-bottom: 100px;
+}
+
+.foods__link > li {
+  width: 16.9%;
+  background-color: #3DA3FF;
+  padding: 20px 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.foods__link > li a {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.food {
+  color: #123C62;
+}
+
+.food__card-1 {
+  position: relative;
+  margin: 40px 0;
+}
+
+.food__card-1 img {
+  width: 50%;
+}
+
+.food__card-1__info {
+  text-align: justify;
+  position: absolute;
+  width: 52%;
+  background-color: #ffffff;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0px;
+}
+
+.food__card-1__info h2 {
+  padding: 30px 0;
+  padding-top: 0px;
+  font-size: 1.25rem;
+}
+
+.food__card-1__info a {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.125rem;
+  color: #ffffff;
+  background-color: #FFB72A;
+}
+
+.food__card-2 {
+  text-align: end;
+  position: relative;
+  margin: 40px 0;
+}
+
+.food__card-2 img {
+  width: 50%;
+}
+
+.food__card-2__info {
+  text-align: justify;
+  position: absolute;
+  width: 52%;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  border-radius: 30px;
+  border-bottom-right-radius: 0px;
+}
+
+.food__card-2__info h2 {
+  padding: 30px 0;
+  padding-top: 0px;
+  font-size: 1.25rem;
+}
+
+.food__card-2__info a {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.125rem;
+  color: #ffffff;
+  background-color: #FFB72A;
 }
 /*# sourceMappingURL=style.css.map */
