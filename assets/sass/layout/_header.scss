@@ -108,4 +108,18 @@ header {
 			}
 		}
 	}
+	&__traffic{
+		@extend %background-img-position;
+		background-image: url(../public/picture/header-cover/traffic.png);
+		position: relative;
+		&__container{
+			@extend %layout-header-section;
+			&__title{
+				@extend %layout-header-title;
+			}
+			img{
+				@extend %layout-header-icon;
+			}
+		}
+	}
 }

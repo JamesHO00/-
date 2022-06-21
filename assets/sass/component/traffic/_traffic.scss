@@ -1,0 +1,35 @@
+.traffic{
+	margin-bottom: 40px;
+	color:$color-accent-dark;
+	&__title{
+		font-size:$font-title-footer-sub;
+		margin-bottom: 40px;
+		color:$color-accent;
+	}
+	&__bus{
+		margin-bottom: 40px;
+		text-align: justify;
+	}
+	&__ship{
+		a{
+			display: inline-block;
+			background-color: $color-accent-light;
+			color:$color-white;
+			margin-top: 20px;
+			padding: 10px 20px;
+			border-radius: 20px;
+		}
+	}
+	&__park{
+		display: inline-flex;
+		flex-direction: column;
+		margin-right: 25%;
+		&__title{
+			margin-bottom: 20px;
+			font-size: $font-navbar;
+		}
+	}
+	&__map{
+		padding: 139px;
+	}
+}

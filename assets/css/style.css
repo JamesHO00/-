@@ -111,7 +111,7 @@ table {
       flex-wrap: wrap;
 }
 
-.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container, .header__food__container {
+.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container, .header__food__container, .header__traffic__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +123,7 @@ table {
           align-items: flex-end;
 }
 
-.header__home, .header__about-us, .header__stay, .header__attractions, .header__news, .header__events, .header__food, .footer::before {
+.header__home, .header__about-us, .header__stay, .header__attractions, .header__news, .header__events, .header__food, .header__traffic, .footer::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,7 +156,7 @@ header {
   height: 80vh;
 }
 
-.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container, .header__food__container {
+.header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container, .header__food__container, .header__traffic__container {
   position: absolute;
   bottom: 0;
   background-color: #ffffff;
@@ -165,14 +165,14 @@ header {
   border-top-right-radius: 50px;
 }
 
-.header__about-us__container__title, .header__stay__container__title, .header__attractions__container__title, .header__news__container__title, .header__events__container__title, .header__food__container__title {
+.header__about-us__container__title, .header__stay__container__title, .header__attractions__container__title, .header__news__container__title, .header__events__container__title, .header__food__container__title, .header__traffic__container__title {
   color: #123C62;
   font-size: 1.5rem;
   padding-bottom: 10px;
   padding-left: 30px;
 }
 
-.header__about-us__container img, .header__stay__container img, .header__attractions__container img, .header__news__container img, .header__events__container img, .header__food__container img {
+.header__about-us__container img, .header__stay__container img, .header__attractions__container img, .header__news__container img, .header__events__container img, .header__food__container img, .header__traffic__container img {
   width: 70px;
   height: 70px;
 }
@@ -308,6 +308,11 @@ a {
 
 .header__food {
   background-image: url(../public/picture/header-cover/food.jpg);
+  position: relative;
+}
+
+.header__traffic {
+  background-image: url(../public/picture/header-cover/traffic.png);
   position: relative;
 }
 
@@ -1011,5 +1016,50 @@ main {
   font-size: 1.125rem;
   color: #ffffff;
   background-color: #FFB72A;
+}
+
+.traffic {
+  margin-bottom: 40px;
+  color: #123C62;
+}
+
+.traffic__title {
+  font-size: 1.375rem;
+  margin-bottom: 40px;
+  color: #3DA3FF;
+}
+
+.traffic__bus {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.traffic__ship a {
+  display: inline-block;
+  background-color: #FFB72A;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.traffic__park {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 25%;
+}
+
+.traffic__park__title {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+}
+
+.traffic__map {
+  padding: 139px;
 }
 /*# sourceMappingURL=style.css.map */
