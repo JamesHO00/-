@@ -11,6 +11,137 @@
 		text-align: justify;
 	}
 	&__ship{
+		&__tables{
+			display: flex;
+			flex-direction: column;
+			width: 900px;
+			background-color: #8FC7F9;
+			margin: 40px auto;
+			overflow: hidden;
+			padding-bottom: 40px;
+			position: relative;
+			box-sizing: content-box;
+			span{
+				display: inline-block;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				background-color: white;
+				border-radius: 50%;
+				bottom: -27px;
+				left: 0;
+				&:nth-child(1){
+					left:10px;
+				}
+				&:nth-child(2){
+					left:70px;
+				}
+				&:nth-child(3){
+					left:130px;
+				}
+				&:nth-child(4){
+					left:190px;
+				}
+				&:nth-child(5){
+					left:250px;
+				}
+				&:nth-child(6){
+					left:310px;
+				}
+				&:nth-child(7){
+					left:370px;
+				}
+				&:nth-child(8){
+					left:430px;
+				}
+				&:nth-child(9){
+					left:490px;
+				}
+				&:nth-child(10){
+					left:550px;
+				}
+				&:nth-child(11){
+					left:610px;
+				}
+				&:nth-child(12){
+					left:670px;
+				}
+				&:nth-child(13){
+					left:730px;
+				}
+				&:nth-child(14){
+					left:790px;
+				}
+				&:nth-child(15){
+					left:850px;
+				}
+			}
+			&__title{
+				display: flex;
+				width: 100%;
+				li{
+					text-align: center;
+					flex:1;
+					padding-top: 30px;
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+					cursor: pointer;
+					position: relative;
+					background-color: #8FC7F9;
+					&.active{
+						background-color: #3DA3FF;
+					}
+					&:nth-child(2){
+						background-color: #E9EDC9;
+						&.active{
+							background-color: #C6D16C;
+						}
+					}
+					&:nth-child(3){
+						background-color: #FFD15B;
+						&.active{
+							background-color: #FFB72A;
+						}
+					}
+					span{
+						display: inline-block;
+						position: absolute;
+						width: 40px;
+						height: 40px;
+						background-color: white;
+						border-radius: 50%;
+						top: -27px;
+						left: 0;
+						&:nth-child(1){
+							left:10px;
+						}
+						&:nth-child(2){
+							left:70px;
+						}
+						&:nth-child(3){
+							left:130px;
+						}
+						&:nth-child(4){
+							left:190px;
+						}
+						&:nth-child(5){
+							left:250px;
+						}
+					}
+				}
+			}
+			table{
+				width: 80%;
+				margin: 20px auto;
+				border-collapse: collapse;
+				border: 1px solid black;
+			}
+			td{
+				border: 1px solid black;
+				text-align: center;
+				padding: 10px;
+			}
+		}
 		a{
 			display: inline-block;
 			background-color: $color-accent-light;
