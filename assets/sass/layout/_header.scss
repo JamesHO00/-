@@ -3,12 +3,19 @@ header {
 }
 .header{
 	&__home{
-		background-image: url(../public/picture/header-cover/home.png);
-		@extend %background-img-position;
-		@extend %flex-center;
-		color:$color-white;
+		position: relative;
+		div{
+			width: 100%;
+			height: inherit;
+			img{
+				width: 100%;
+				height: inherit;
+			}
+		}
 		&__title{
-			font-size: $font-big-title;
+			position: absolute;
+			top:50%;
+			left: 50%;
 		}
 	}
 

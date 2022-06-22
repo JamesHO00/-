@@ -30,6 +30,9 @@
 				font-size: $font-navbar;
 				color: $color-white;
 				background-color: $color-accent-light;
+				&:hover{
+					background-color: #ffd15b; transition: box-shadow 0.2s; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+				}
 
 			}
 		}
@@ -65,6 +68,9 @@
 				font-size: $font-navbar;
 				color: $color-white;
 				background-color: $color-accent-light;
+				&:hover{
+					background-color: #ffd15b; transition: box-shadow 0.2s; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+				}
 			}
 		}
 	}

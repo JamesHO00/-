@@ -9,6 +9,9 @@
 
 		img{
 		width: 100%;
+		&:hover{
+			opacity: 0.5;
+		}
 		}
 	}
 
@@ -28,6 +31,9 @@
 		a{
 			padding-left: 40px;
 			color:$color-accent-dark;
+			&:hover{
+				color:#8FC7F9;
+			}
 		}
 
 		&-sub{

@@ -7,14 +7,33 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      button::before {
+        background-color: gray !important;
+      }
+      .header__home button {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
       <a href="index.html" class="navbar__logo"
-        ><img src="assets/public/logo/logo.png" alt="logo"
+        ><img src="assets/public/logo/logo.jpg" alt="logo"
       /></a>
       <ul class="navbar__link">
         <li>
@@ -59,11 +78,35 @@
       </ul>
     </nav>
     <header class="header__home">
-      <h1 class="header__home__title">Welcome to Cijin</h1>
+      <div>
+        <img src="assets/public/picture/header-cover/home.png" alt="" />
+      </div>
+      <div>
+        <img src="assets/public/picture/header-cover/about.png" alt="" />
+      </div>
+      <div>
+        <img src="assets/public/picture/header-cover/news.png" alt="" />
+      </div>
+      <div>
+        <img src="assets/public/picture/header-cover/events.png" alt="" />
+      </div>
+      <div>
+        <img src="assets/public/picture/header-cover/attractions.png" alt="" />
+      </div>
+      <div>
+        <img src="assets/public/picture/header-cover/food.jpg" alt="" />
+      </div>
+      <div>
+        <img src="assets/public/picture/header-cover/stay.png" alt="" />
+      </div>
+      <div>
+        <img src="assets/public/picture/header-cover/traffic.png" alt="" />
+      </div>
     </header>
+    <h1 class="header__home__title">Welcome to Cijin</h1>
     <main>
       <article class="news">
-        <h2 class="news__title">最新消息</h2>
+        <a href="Page/News.html"><h2 class="news__title">最新消息</h2></a>
         <i class="news__icon"
           ><img src="assets/public/icon/shell-1.png" alt="貝殼"
         /></i>
@@ -73,19 +116,23 @@
         <ul class="news__content">
           <li>
             <sub class="news__date">2022.5.13</sub>
-            <p>旗津圖書館海洋保育攝影展 國際攝影師前來相挺</p>
+            <a href="Page/News.html"
+              >旗津圖書館海洋保育攝影展 國際攝影師前來相挺</a
+            >
           </li>
           <li>
             <sub class="news__date">2022.5.4</sub>
-            <p>旗津超精采！活動接力一路嗨到8月</p>
+            <a href="Page/News.html">旗旗津超精采！活動接力一路嗨到8月</a>
           </li>
           <li>
             <sub class="news__date">2022.5.4</sub>
-            <p>夏日旗津玩不膩 6月啤酒音樂嘉年華清涼登場</p>
+            <a href="Page/News.html"
+              >夏日旗津玩不膩 6月啤酒音樂嘉年華清涼登場</a
+            >
           </li>
           <li>
             <sub class="news__date">2022.5.2</sub>
-            <p>熱門拍照約會景點！ 高雄也有旗津版藍眼淚</p>
+            <a href="Page/News.html">熱門拍照約會景點！ 高雄也有旗津版藍眼淚</a>
           </li>
         </ul>
       </article>
@@ -125,13 +172,27 @@
               <a href="Page/Event-5.html">more></a>
             </aside>
           </li>
+          <li class="event__item">
+            <img
+              src="assets/public/picture/event/event-4.png"
+              alt="旗津黑沙玩藝節"
+            />
+            <aside class="event__info">
+              <h3 class="event__name">旗津黑沙玩藝節</h3>
+              <a href="Page/Event-3.html">more></a>
+            </aside>
+          </li>
+          <li class="event__item">
+            <img
+              src="assets/public/picture/event/event-5.png"
+              alt="旗津黑沙玩藝節"
+            />
+            <aside class="event__info">
+              <h3 class="event__name">旗津黑沙玩藝節</h3>
+              <a href="Page/Event-3.html">more></a>
+            </aside>
+          </li>
         </ul>
-        <button class="event__button-1">
-          <span class="material-symbols-outlined"> arrow_back_ios </span>
-        </button>
-        <button class="event__button-2">
-          <span class="material-symbols-outlined"> arrow_forward_ios </span>
-        </button>
       </article>
       <article class="map">
         <img class="map__deer" src="assets/public/figure/deer.png" alt="鹿" />
@@ -142,17 +203,31 @@
         />
       </article>
     </main>
+    <a class="back-top" href="#"
+      ><img src="assets/public/button/back-top.png" alt=""
+    /></a>
     <footer class="footer">
       <section class="footer__logo">
-        <img src="assets/public/logo/logo.png" alt="logo" />
+        <a href="index.html"
+          ><img src="assets/public/logo/logo.jpg" alt="logo"
+        /></a>
         <h3>旗津 Chiji</h3>
       </section>
       <ul class="footer__info">
         <li class="footer__info__contact-e">Contact Us</li>
         <li class="footer__info__contact-c">聯絡我們</li>
         <li class="footer__info__address">振興里 高雄市旗津區</li>
-        <li class="footer__info__email">a390000@kcg.gov.tw</li>
-        <li class="footer__info__phone">07-7995678</li>
+        <li class="footer__info__email">
+          <a href="mailto:a390000@kcg.gov.tw">
+            <img src="assets/public/icon/email.png" alt="" />
+            a390000@kcg.gov.tw</a
+          >
+        </li>
+        <li class="footer__info__phone">
+          <a href="tel:+886-7-7995678"
+            ><img src="assets/public/icon/phone.png" alt="" /> 07-7995678</a
+          >
+        </li>
       </ul>
 
       <ul class="footer__visits">
@@ -170,5 +245,20 @@
       </ul>
       <p class="footer__copyright">©高雄旗津 All rights reserved.</p>
     </footer>
+    <script>
+      $(document).ready(function () {
+        $('.header__home').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+        $('.event__container').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        });
+      });
+    </script>
   </body>
 </html>

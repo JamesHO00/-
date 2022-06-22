@@ -6,7 +6,11 @@
 	&__title{
 		font-size:$font-title;
 		padding: $margin-base 0;
-		color:$color-accent;
+		color:#3da3ff;
+		margin-top: 150px;
+		&:hover{
+			color:#8FC7F9
+		}
 	}
 
 	&__icon{
@@ -41,9 +45,13 @@
 			margin: $margin-base 0;
 			padding-bottom: $margin-base;
 
-			p{
+
+			a{
 				font-size: $font-navbar;
 				color:$color-accent-dark;
+				&:hover{
+					color:#8FC7F9
+				}
 			}
 		}
 	}

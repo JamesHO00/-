@@ -14,19 +14,36 @@ position: relative;
 	width: 93%;
 	margin-left: 70px;
 	font-size:$font-title;
+	margin-top: 100px;
 	padding: $margin-base 0;
 	color:$color-accent;
+	&:hover{
+		color:#5B7893;
+	}
 }
 
 &__container{
-	@extend %flex-between;
+	display: flex;
 }
 
 &__item{
-	width: 26%;
+	width: 25%;
+	margin: 0 20px;
+	&:hover{
+		img{
+			opacity: 0.5;
+		}
+		h3{
+			color:#5B7893;
+		}
+		a{
+			color:#5B7893;
+		}
+	}
 
 	img{
 		width: 100%;
+
 	}
 }
 
@@ -43,27 +60,5 @@ position: relative;
 		color:$color-gray;
 		font-size:$font-date;
 	}
-}
-
-button{
-	@extend %flex-center;
-	width: $margin-large;
-	height: $margin-large;
-	border: none;
-	border-radius: $border-radius-circle;
-	position: absolute;
-	background-color: $color-button-gray;
-	color:$color-white;
-	cursor: pointer;
-}
-
-&__button-1{
-	top:21vh;
-	left:-5.946%;
-}
-
-&__button-2{
-	top:21vh;
-	right: -5.946%;
 }
 }

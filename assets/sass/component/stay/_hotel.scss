@@ -33,16 +33,15 @@
 		}
 		&-phone{
 			display: inline-block;
-
-			&::before{
-				display: inline-block;
-				margin-left: $margin-big;
-
-				content: '';
-				background-image: url(../public/icon/blackicon/phone.png);
-				@extend %background-title-icon;
+			img{
 				width: $icon-small;
 				height: $icon-small;
+			}
+			a{
+				color:$color-accent-dark;
+				&:hover{
+					color:#3DA3FF;
+				}
 			}
 		}
 		}
@@ -91,5 +90,8 @@
 	text-align: end;
 	margin: $margin-large 10%;
 	color:$color-gray;
+	&:hover{
+		color:#3DA3FF;
+	}
 }
 }

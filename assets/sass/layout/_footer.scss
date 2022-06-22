@@ -19,10 +19,18 @@
 	}
 
 	&__logo{
+		width: 350px;
+		height: 400px;
+		text-align: center;
 		h3{
 			margin-top: $margin-base;
 			font-size: $font-title-footer;
-			text-align: center;
+		}
+		img{
+			width: 80%;
+			&:hover{
+				opacity: 0.5;
+			}
 		}
 	}
 
@@ -40,26 +48,29 @@
 			margin: $margin-base 0;
 		}
 		&__email{
-			&::before{
-				display:inline-block;
-				content:'';
-				margin-right: $margin-small;
-				background-image: url(../public/icon/email.png);
-				width:$icon-small;
-				height: $icon-small;
+			a{
+				color:white;
+				&:hover{
+					color:#B8DDFF;
+					img{
+						opacity: 0.5;
+					}
+				}
 			}
 		}
 &__phone{
 	margin-top: $margin-small;
-		&::before{
-			display:inline-block;
-			content:'';
-			margin-right: $margin-small;
-			background-image: url(../public/icon/phone.png);
-			width: $icon-small;
-			height:$icon-small;
+
+	a{
+		color:white;
+		&:hover{
+			color:#B8DDFF;
+			img{
+				opacity: 0.5;
 			}
 		}
+	}
+}
 	}
 	&__visits{
 		&-e{
@@ -76,6 +87,9 @@
 			margin-right:$margin-base ;
 			width: $icon-small;
 			height: $icon-small;
+			&:hover{
+				opacity: 0.5;
+			}
 		}
 	}
 	&__copyright{

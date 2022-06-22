@@ -6,6 +6,14 @@
 		width:450px ;
 		height: 470px;
 		margin-bottom: 40px;
+		&:hover{
+			img{
+				opacity: 0.5;
+			}
+			span{
+				background-color:#3DA3FF;
+			}
+		}
 		&__image{
 			width: 100%;
 			margin: 0 auto;

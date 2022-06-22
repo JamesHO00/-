@@ -88,11 +88,13 @@
 					cursor: pointer;
 					position: relative;
 					background-color: #8FC7F9;
+					color:white;
 					&.active{
 						background-color: #3DA3FF;
 					}
 					&:nth-child(2){
 						background-color: #E9EDC9;
+						color:$color-accent-dark;
 						&.active{
 							background-color: #C6D16C;
 						}
@@ -149,6 +151,9 @@
 			margin-top: 20px;
 			padding: 10px 20px;
 			border-radius: 20px;
+			&:hover{
+				background-color: #ffd15b; transition: box-shadow 0.2s; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+			}
 		}
 	}
 	&__park{

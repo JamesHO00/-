@@ -4,8 +4,38 @@ body{
 	font-family: 'Noto Sans TC', sans-serif;
 	line-height: 1.4;
 	letter-spacing: 2px;
+	position: relative;
 }
 
 a{
 	text-decoration: none;
+}
+.back-top{
+	position: fixed;
+	bottom: 30px;
+  right: 30px;
+	z-index: 100;
+	img{
+		width: 40px;
+	}
+	:hover {
+		animation: swing 1s infinite;
+	}
+	@keyframes swing {
+		15% {
+			transform: translateY(5px);
+		}
+		40% {
+			transform: translateY(-5px);
+		}
+		65% {
+			transform: translateY(2px);
+		}
+		85% {
+			transform: translateY(-2px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+	}
 }

@@ -11,6 +11,9 @@
 		padding-top:$margin-base ;
 		position: relative;
 		cursor: pointer;
+		&:hover{
+			color:#5B7893;
+		}
 		&__button{
 			position: absolute;
 			top:$margin-base;
