@@ -3,7 +3,7 @@ position: relative;
 
 &__icon{
 	position: absolute;
-	width: 70px;
+	width: $icon-base;
 
 	img{
 		width: 100%;
@@ -12,13 +12,13 @@ position: relative;
 
 &__title{
 	width: 93%;
-	margin-left: 70px;
+	margin-left: 7%;
 	font-size:$font-title;
-	margin-top: 100px;
+	margin-top: $margin-middle-hue;
 	padding: $margin-base 0;
 	color:$color-accent;
 	&:hover{
-		color:#5B7893;
+		color:$color-hover-blue;
 	}
 }
 
@@ -28,16 +28,16 @@ position: relative;
 
 &__item{
 	width: 25%;
-	margin: 0 20px;
+	margin: 0 $margin-base;
 	&:hover{
 		img{
 			opacity: 0.5;
 		}
 		h3{
-			color:#5B7893;
+			color:$color-hover-blue;
 		}
 		a{
-			color:#5B7893;
+			color:$color-hover-blue;
 		}
 	}
 

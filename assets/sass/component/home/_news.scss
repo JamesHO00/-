@@ -5,17 +5,17 @@
 
 	&__title{
 		font-size:$font-title;
-		padding: $margin-base 0;
-		color:#3da3ff;
-		margin-top: 150px;
+		padding: $padding-base 0;
+		color:$color-accent;
+		margin-top: $margin-extra-hue;
 		&:hover{
-			color:#8FC7F9
+			color:$color-accent-blue
 		}
 	}
 
 	&__icon{
 		position: absolute;
-		width: 70px;
+		width: $icon-base;
 		top:0;
 		left: -70px;
 
@@ -43,14 +43,14 @@
 		li{
 			border-bottom: 2px solid $color-accent;
 			margin: $margin-base 0;
-			padding-bottom: $margin-base;
+			padding-bottom: $padding-base;
 
 
 			a{
 				font-size: $font-navbar;
 				color:$color-accent-dark;
 				&:hover{
-					color:#8FC7F9
+					color:$color-accent-blue;
 				}
 			}
 		}

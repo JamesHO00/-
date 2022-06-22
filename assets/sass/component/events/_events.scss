@@ -5,28 +5,28 @@
 	&__cards{
 		width:450px ;
 		height: 470px;
-		margin-bottom: 40px;
+		margin-bottom: $margin-large;
 		&:hover{
 			img{
 				opacity: 0.5;
 			}
 			span{
-				background-color:#3DA3FF;
+				background-color:$color-accent;
 			}
 		}
 		&__image{
 			width: 100%;
 			margin: 0 auto;
-			border-radius: 30px;
+			border-radius: $border-radius-small;
 		}
 		&__info{
-			margin-top: 30px;
+			margin-top: $margin-big;
 			&__date{
 				color:$color-accent-dark;
 			}
 			&__title{
 				position: relative;
-				margin-top:20px;
+				margin-top:$margin-base;
 				font-size:$font-navbar ;
 				color:$color-accent-dark;
 				span{
@@ -34,10 +34,10 @@
 					right: 0;
 					font-size: $font-date;
 					background-color: $color-accent-blue;
-					border-radius: 10px;
+					border-radius: $border-radius-little;
 					a{
 						color:$color-white;
-						padding: 20px 10px;
+						padding: $padding-base $padding-small;
 					}
 				}
 			}

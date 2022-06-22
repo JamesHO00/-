@@ -1,16 +1,16 @@
 .foods{
 	&__link{
 		@extend %flex-space-between-wrap;
-		margin-bottom: 100px;
+		margin-bottom: $margin-middle-hue;
 		>li{
 			width:16.9%;
 			background-color: $color-accent;
-			padding: $margin-base $margin-base;
+			padding: $padding-base;
 			margin-bottom: $margin-large;
 			text-align: center;
 			border-radius: $border-radius-base;
 			&:hover{
-				background-color:#123C62 ;
+				background-color:$color-accent-dark ;
 			}
 
 			a{

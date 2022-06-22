@@ -1,33 +1,32 @@
 .traffic{
-	margin-bottom: 40px;
+	margin-bottom: $margin-large;
 	color:$color-accent-dark;
 	&__title{
 		font-size:$font-title-footer-sub;
-		margin-bottom: 40px;
+		margin-bottom: $margin-large;
 		color:$color-accent;
 	}
 	&__bus{
-		margin-bottom: 40px;
+		margin-bottom: $margin-large;
 		text-align: justify;
 	}
 	&__ship{
 		&__tables{
-			display: flex;
-			flex-direction: column;
+			@extend %flex-column;
 			width: 900px;
-			background-color: #8FC7F9;
-			margin: 40px auto;
+			background-color: $color-accent-blue;
+			margin: $margin-large auto;
 			overflow: hidden;
-			padding-bottom: 40px;
+			padding-bottom: $padding-large;
 			position: relative;
 			box-sizing: content-box;
 			span{
 				display: inline-block;
 				position: absolute;
-				width: 40px;
-				height: 40px;
+				width: $large;
+				height: $large;
 				background-color: white;
-				border-radius: 50%;
+				border-radius: $border-radius-circle;
 				bottom: -27px;
 				left: 0;
 				&:nth-child(1){
@@ -82,36 +81,36 @@
 				li{
 					text-align: center;
 					flex:1;
-					padding-top: 30px;
-					padding-bottom: 20px;
-					margin-bottom: 20px;
+					padding-top: $padding-big;
+					padding-bottom: $padding-base;
+					margin-bottom: $margin-base;
 					cursor: pointer;
 					position: relative;
-					background-color: #8FC7F9;
-					color:white;
+					background-color: $color-accent-blue;
+					color:$color-white;
 					&.active{
-						background-color: #3DA3FF;
+						background-color: $color-accent;
 					}
 					&:nth-child(2){
-						background-color: #E9EDC9;
+						background-color: $color-table;
 						color:$color-accent-dark;
 						&.active{
-							background-color: #C6D16C;
+							background-color: $color-table-active;
 						}
 					}
 					&:nth-child(3){
-						background-color: #FFD15B;
+						background-color: $color-hover-light;
 						&.active{
-							background-color: #FFB72A;
+							background-color: $color-accent-light;
 						}
 					}
 					span{
 						display: inline-block;
 						position: absolute;
-						width: 40px;
-						height: 40px;
-						background-color: white;
-						border-radius: 50%;
+						width: $large;
+						height: $large;
+						background-color: $color-white;
+						border-radius: $border-radius-circle;
 						top: -27px;
 						left: 0;
 						&:nth-child(1){
@@ -134,25 +133,25 @@
 			}
 			table{
 				width: 80%;
-				margin: 20px auto;
+				margin: $margin-base auto;
 				border-collapse: collapse;
 				border: 1px solid black;
 			}
 			td{
 				border: 1px solid black;
 				text-align: center;
-				padding: 10px;
+				padding:$padding-small;
 			}
 		}
 		a{
 			display: inline-block;
 			background-color: $color-accent-light;
 			color:$color-white;
-			margin-top: 20px;
-			padding: 10px 20px;
-			border-radius: 20px;
+			margin-top: $margin-base;
+			padding: $padding-small $padding-base;
+			border-radius:$border-radius-min;
 			&:hover{
-				background-color: #ffd15b; transition: box-shadow 0.2s; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+				background-color: $color-hover-light; transition: box-shadow 0.2s; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 			}
 		}
 	}
@@ -161,7 +160,7 @@
 		flex-direction: column;
 		margin-right: 25%;
 		&__title{
-			margin-bottom: 20px;
+			margin-bottom:$margin-base;
 			font-size: $font-navbar;
 		}
 	}

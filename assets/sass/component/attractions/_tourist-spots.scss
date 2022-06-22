@@ -4,12 +4,14 @@
 
 		>li{
 			width: 11.72%;
-			max-width: 11.72%;
 			background-color: $color-accent;
-			padding: $margin-base $margin-large;
+			padding: $padding-base $padding-large;
 			margin-bottom: $margin-large;
 			text-align: center;
 			border-radius: $border-radius-base;
+			&:hover{
+					background-color:$color-accent-dark;
+			}
 
 			a{
 				font-size: $font-link;

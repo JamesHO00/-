@@ -1,11 +1,29 @@
-// margin padding
-$margin-small:10px;
-$margin-base: 20px;
+$small: 10px;
+$base: 20px;
+$base-big: 25px;
+$big: 30px;
+$large: 40px;
+$base-hue: 50px;
+$small-hue:80px;
+$middle-hue: 100px;
+$extra-hue: 150px;
+// margin
+$margin-small:$small;
+$margin-base: $base;
 $margin-base-big:25px;
-$margin-big:30px;
-$margin-large: 40px;
-$margin-base-hue: 50px;
-$margin-hue:150px;
+$margin-big:$big;
+$margin-large: $large;
+$margin-small-hue:$small-hue;
+$margin-base-hue: $base-hue;
+$margin-middle-hue:$middle-hue;
+$margin-extra-hue:$extra-hue;
+// padding
+$padding-small:$small;
+$padding-base:$base;
+$padding-big:$big;
+$padding-large:$large;
+$padding-middle-hue:$middle-hue;
+$padding-base-hue:$base-hue;
 
 $navbar-height:100px;
 $footer-height:400px;
@@ -21,6 +39,8 @@ $icon-large: 130px;
 
 $logo:100px;
 
+$border-radius-little:10px;
+$border-radius-min:20px;
 $border-radius-small:30px;
 $border-radius-base:40px;
 $border-radius-large:50px;

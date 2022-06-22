@@ -77,6 +77,16 @@ table {
           align-items: center;
 }
 
+.traffic__ship__tables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .footer, .hotel__feature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,6 +121,15 @@ table {
       flex-wrap: wrap;
 }
 
+.detal__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .header__about-us__container, .header__stay__container, .header__attractions__container, .header__news__container, .header__events__container, .header__food__container, .header__traffic__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,11 +144,6 @@ table {
 
 .header__about-us, .header__stay, .header__attractions, .header__news, .header__events, .header__food, .header__traffic, .footer::before {
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hotel__introduce__contact-address::before {
   background-position: center;
   background-size: cover;
 }
@@ -177,12 +191,15 @@ header {
   height: 70px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.4;
   letter-spacing: 2px;
-  position: relative;
 }
 
 a {
@@ -346,7 +363,9 @@ a {
 .header__home__title {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
+  font-size: 3.125rem;
+  color: #ffffff;
 }
 
 .header__about-us {
@@ -370,7 +389,7 @@ a {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   bottom: -10%;
-  right: -5%;
+  right: 0%;
 }
 
 .header__news {
@@ -529,7 +548,7 @@ main {
 
 .event__title {
   width: 93%;
-  margin-left: 70px;
+  margin-left: 7%;
   font-size: 1.5rem;
   margin-top: 100px;
   padding: 20px 0;
@@ -612,7 +631,7 @@ main {
 .news__title {
   font-size: 1.5rem;
   padding: 20px 0;
-  color: #3da3ff;
+  color: #3DA3FF;
   margin-top: 150px;
 }
 
@@ -672,8 +691,7 @@ main {
   color: #123C62;
 }
 
-.history__items {
-  margin-bottom: 20px;
+.history p {
   color: #123C62;
 }
 
@@ -712,16 +730,14 @@ main {
   display: inline-block;
 }
 
-.hotel__introduce__contact-address::before {
-  display: inline-block;
-  content: '';
-  background-image: url(../public/icon/blackicon/location.png);
+.hotel__introduce__contact-address img {
   width: 25px;
   height: 25px;
 }
 
 .hotel__introduce__contact-phone {
   display: inline-block;
+  margin-left: 150px;
 }
 
 .hotel__introduce__contact-phone img {
@@ -752,12 +768,6 @@ main {
   font-size: 1.125rem;
 }
 
-.hotel__feature__items img {
-  position: absolute;
-  top: -40px;
-  left: -40px;
-}
-
 .hotel__feature__items-title {
   position: absolute;
   top: -40px;
@@ -786,12 +796,15 @@ main {
 
 .tourist-spots__link > li {
   width: 11.72%;
-  max-width: 11.72%;
   background-color: #3DA3FF;
   padding: 20px 40px;
   margin-bottom: 40px;
   text-align: center;
   border-radius: 40px;
+}
+
+.tourist-spots__link > li:hover {
+  background-color: #123C62;
 }
 
 .tourist-spots__link > li a {
@@ -800,7 +813,7 @@ main {
 }
 
 .destinations {
-  margin-top: 15vh;
+  margin-top: 150px;
 }
 
 .destinations__items {
@@ -834,7 +847,7 @@ main {
 
 .info {
   margin-bottom: 30px;
-  border-bottom: 1px solid #B8DDFF;
+  border-bottom: 2px solid #B8DDFF;
   color: #123C62;
   overflow: hidden;
 }
@@ -862,10 +875,10 @@ main {
   height: 30px;
   border-radius: 50%;
   background-color: #8FC7F9;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
   cursor: pointer;
 }
 
@@ -909,19 +922,12 @@ main {
   overflow: scroll;
 }
 
-.info__container div {
-  width: 94.01%;
-  margin: 0 auto;
-  padding: 30px 0 30px 0;
-}
-
 .info__container img {
   width: 100%;
 }
 
 .info__container p {
-  padding: 0 30px;
-  padding-top: 20px;
+  padding: 20px 30px;
   text-align: justify;
 }
 
@@ -1013,12 +1019,6 @@ main {
 }
 
 .detal__back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   margin-top: 20px;
   font-size: 1.125rem;
 }
@@ -1075,7 +1075,7 @@ main {
 .foods__link > li {
   width: 16.9%;
   background-color: #3DA3FF;
-  padding: 20px 20px;
+  padding: 20px;
   margin-bottom: 40px;
   text-align: center;
   border-radius: 40px;
@@ -1208,13 +1208,6 @@ main {
 }
 
 .traffic__ship__tables {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 900px;
   background-color: #8FC7F9;
   margin: 40px auto;
@@ -1314,7 +1307,7 @@ main {
   cursor: pointer;
   position: relative;
   background-color: #8FC7F9;
-  color: white;
+  color: #ffffff;
 }
 
 .traffic__ship__tables__title li.active {
@@ -1331,7 +1324,7 @@ main {
 }
 
 .traffic__ship__tables__title li:nth-child(3) {
-  background-color: #FFD15B;
+  background-color: #ffd15b;
 }
 
 .traffic__ship__tables__title li:nth-child(3).active {
@@ -1343,7 +1336,7 @@ main {
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50%;
   top: -27px;
   left: 0;

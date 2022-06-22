@@ -1,28 +1,28 @@
 .info{
 	margin-bottom: $margin-big;
-	border-bottom: 1px solid $color-underline;
+	border-bottom: 2px solid $color-underline;
 	color:$color-accent-dark;
 	overflow: hidden;
 	&__date{
-		padding-bottom: $margin-base;
+		padding-bottom: $padding-base;
 	}
 	&__title{
-		padding-bottom: $margin-base-hue;
-		padding-top:$margin-base ;
+		padding-bottom: $padding-base-hue;
+		padding-top:$padding-base ;
 		position: relative;
 		cursor: pointer;
 		&:hover{
-			color:#5B7893;
+			color:$color-hover-blue;
 		}
 		&__button{
 			position: absolute;
-			top:$margin-base;
+			top:$base;
 			right: 0;
-			width: $margin-big;
-			height: $margin-big;
+			width: $big;
+			height: $big;
 			border-radius: $border-radius-circle;
 			background-color: $color-accent-blue;
-			transition: transform 300ms ;
+			transition: transform 500ms ;
 			cursor: pointer;
 			&.active{
 				transform: rotate(-180deg);
@@ -56,17 +56,11 @@
 				height: 750px;
 				overflow:scroll;
 			}
-			div{
-				width:94.01% ;
-				margin: 0 auto;
-				padding: $margin-big 0 $margin-big 0;
-			}
 			img{
 				width: 100%;
 			}
 			p{
-				padding: 0 30px;
-				padding-top: $margin-base;
+				padding: $padding-base $padding-big;
 				text-align: justify;
 			}
 		}
