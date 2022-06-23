@@ -88,18 +88,27 @@
 					position: relative;
 					background-color: $color-accent-blue;
 					color:$color-white;
+					&:hover{
+						background-color: $color-accent;
+					}
 					&.active{
 						background-color: $color-accent;
 					}
 					&:nth-child(2){
 						background-color: $color-table;
 						color:$color-accent-dark;
+						&:hover{
+							background-color: $color-table-active;
+						}
 						&.active{
 							background-color: $color-table-active;
 						}
 					}
 					&:nth-child(3){
 						background-color: $color-hover-light;
+						&:hover{
+							background-color: $color-accent-light;
+						}
 						&.active{
 							background-color: $color-accent-light;
 						}
